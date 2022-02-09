@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button class="button_su" onclick="goBack()">go Back</button>
+    <p>notice that clicking on back button here will redirect you to the previous page</p>
+    <script>
+        // this window history.back(); function redirect to your previous  page
+        function goBack(){
+           // window.history.back();
+            alert(location.href);
+            if (confirm("want to visit ")){
+                location.href ='3rdProject.html'
+            }
+        }
+    </script>
+    
+</body>
+</html>
